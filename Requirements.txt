@@ -1,0 +1,5 @@
+Fastapi[All]
+pandas
+Numpy
+sklearn
+uvicorn
