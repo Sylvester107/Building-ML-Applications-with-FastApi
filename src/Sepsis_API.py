@@ -6,6 +6,8 @@ from pydantic import BaseModel
 import pickle
 import json
 
+import pandas as pd
+
 # The creation of a FastAPI application instance.
 # the 'app' instance is the main entry point for defining routes, 
 # handling requests, and creating the API. 
@@ -30,7 +32,7 @@ class model_input(BaseModel):
 # Loading the save model
 # rb='read binary'- opening the model in binary mode for reading
 
-sepssis_model = pickle.load(open('gradient_boosting_model.pkl','rb')) 
+sepssis_model = pickle.load(open('Models\gradient_boosting_model.pkl','rb')) 
 
 #
 
