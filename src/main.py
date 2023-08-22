@@ -31,14 +31,14 @@ class Sepsis(BaseModel):
     """
     # Define the input features as class attributes
 
-    PlasmaGlucose : int
-    BloodWorkResult_1 : int
-    BloodPressure : int
-    BloodWorkResult_2 : int
-    BloodWorkResult_3 : int
-    BodyMassIndex : float
-    BloodWorkResult_4 : float
-    Age : int
+   # PlasmaGlucose : int
+    #BloodWorkResult_1 : int
+    #BloodPressure : int
+    #BloodWorkResult_2 : int
+    #BloodWorkResult_3 : int
+    #BodyMassIndex : float
+    #BloodWorkResult_4 : float
+    #Age : int
 
 # Setup
 """
@@ -158,4 +158,4 @@ def sepsis_classification(PlasmaGlucose : int,
 
 # Run the FastAPI application using uvicorn
 if __name__ == "__main__":
-    uvicorn.run("main:app", reload = True)
+    uvicorn.run("main:app", reload = False)
